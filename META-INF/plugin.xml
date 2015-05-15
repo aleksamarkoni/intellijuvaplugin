@@ -1,11 +1,11 @@
 <idea-plugin version="2">
-  <id>com.yourcompany.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>com.aleksamarkoni.uvaonlineplugin.id</id>
+  <name>Uva Online Judge Plugin</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="aleksamarkoni@gmail.com" url="http://www.aleksamarkoni.com">aleksamarkoni</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
+      This is intellij plugin for the Intellij Uva Online site.<br>
       <em>most HTML tags may be used</em>
     ]]></description>
 
@@ -26,6 +26,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+    <moduleBuilder builderClass="wizards.UvaModuleBuilder"/>
   </extensions>
 
   <application-components>
